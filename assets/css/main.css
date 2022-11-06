@@ -1,26 +1,64 @@
-/* ------- Custom Properties ------- */
+/* ------- CUSTOM PROPERTIES ------- */
 
 :root{
     --black: #000000;
     --white: #ffffff;
+
+    --nav-background: #e0e0e0;
 }
 
 
 
-/* ------- Custom Fonts ------- */
+/* ------- CUSTOM FONTS ------- */
 
 
+/* ------- GENERAL HTML RULES ------- */
 
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 
-/* ------- Class Rules ------- */
+main{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 0;
+    max-width: 600px;
+    text-align: center;
+}
+
+/* ------- CLASS RULES ------- */
 
 .class{
     color: black;
 }
 
+/* --- Tab Bar --- */
+
+.nav_button{
+    height: 5em;
+    padding: 1em;
+    width: 100%;
+}
+
+.nav_button:hover{
+    cursor: pointer;
+}
+
+.nav_tab_bar{
+    align-items: center;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), var(--nav-background), var(--nav-background));
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 3em;
+    position: fixed;
+    width: 100%;
+}
 
 
-/* ------- ID Rules ------- */
+
+/* ------- ID RULES ------- */
 
 #id{
     color: white;
@@ -28,7 +66,7 @@
 
 
 
-/* ------- Media Queries ------- */
+/* ------- MEDIA QUERIES ------- */
 
 @media screen and (orientation:portrait) {   
     
